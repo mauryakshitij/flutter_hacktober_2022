@@ -89,7 +89,7 @@ class _SigninScreenState extends State<SigninScreen> {
                   }
                 }
                 catch (err){
-                  Scaffold.of(builderContext).showSnackBar(SnackBar(content: Text(err.toString())));
+                  ScaffoldMessenger.of(builderContext).showSnackBar(SnackBar(content: Text(err.toString())));
                 }
               },
               child: Container(

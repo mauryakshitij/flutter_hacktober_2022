@@ -146,7 +146,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   }
                 }
                 catch (err){
-                  Scaffold.of(builderContext).showSnackBar(SnackBar(content: Text(err.toString())));
+                  ScaffoldMessenger.of(builderContext).showSnackBar(SnackBar(content: Text(err.toString())));
                 }
               },
               child: Container(
